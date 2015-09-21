@@ -60,10 +60,4 @@ Bacteria [] ivor;
  		fill (0,255,0);
  		ellipse(zx,zy,10,10);
  	}
-
- 	void zomshow() {
- 		if (zx > x) {
- 			zx 
- 		}
- 	}
  }    
