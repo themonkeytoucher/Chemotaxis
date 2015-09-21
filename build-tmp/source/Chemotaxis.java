@@ -36,11 +36,13 @@ Bacteria [] ivor;
  }
 
  class Bacteria {
- 	int x,y,c;
+ 	int x,y,c,zx,zy;
 
  	Bacteria() {
  		x = 250;
  		y = 250;
+ 		zx=100;
+ 		zy=100;
  		c = (int)(Math.random()*256);
  	}
  	public void move() {
@@ -72,7 +74,7 @@ Bacteria [] ivor;
 
  	public void zomshow() {
  		fill (0,255,0);
- 		ellipse(x,y,10,10);
+ 		ellipse(zx,zy,10,10);
  	}
  }    
   static public void main(String[] passedArgs) {

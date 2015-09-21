@@ -1,7 +1,5 @@
 Bacteria Zom = new Bacteria();
 Bacteria [] bie;
-Bacteria Surv = new Bacteria();
-Bacteria [] ivor;
 
  void setup() {
  	size(500,500);
@@ -20,13 +18,11 @@ Bacteria [] ivor;
  }
 
  class Bacteria {
- 	int x,y,c,zx,zy;
+ 	int x,y,c;
 
  	Bacteria() {
  		x = 250;
  		y = 250;
- 		zx=100;
- 		zy=100;
  		c = (int)(Math.random()*256);
  	}
  	void move() {
@@ -54,10 +50,5 @@ Bacteria [] ivor;
  	void show() {
  		fill(c,c,c);
  		ellipse(x,y,10,10);
- 	}
-
- 	void zomshow() {
- 		fill (0,255,0);
- 		ellipse(zx,zy,10,10);
  	}
  }    
