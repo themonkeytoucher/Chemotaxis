@@ -28,15 +28,15 @@ Bacteria [] bie;
  	void move() {
  		if (x>=mouseX-20 && x <= mouseX+20 && y >=mouseY-20 && y <= mouseY+20) {
  			if (x>=mouseX) {
- 				x = x+(int)((Math.random()*5)-5);
- 			} else if (x <= mouseX) {
  				x = x+(int)(Math.random()*5);
+ 			} else if (x <= mouseX) {
+ 				x = x+(int)((Math.random()*5)-5);
  			}
 
  			if (y>=mouseY) {
  				y = y-(int)((Math.random()*5)-10);
  				System.out.println("Y is under");
- 			} else if (y<=mouseY) {
+ 			} else if (y<mouseY) {
  				y = y-(int)(Math.random()*5);
  				System.out.println("Y is above");
  			}
