@@ -35,10 +35,10 @@ Bacteria [] bie;
 
  			if (y>=mouseY) {
  				y = y-(int)((Math.random()*5)-10);
- 				System.out.println("Y is under");
+ 			
  			} else if (y<mouseY) {
  				y = y-(int)(Math.random()*5);
- 				System.out.println("Y is above");
+ 			
  			}
 
  		} else {
